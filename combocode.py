@@ -23,7 +23,7 @@ def toggle_selector(event):
 
 
 def make_plot():
-    filename = 'asbo1_s80114.hdf'
+    filename = 'sop_s25386.hdf'
     hdf = SD(filename, SDC.READ)
     data = hdf.select('Streak_array').get().astype('float')
     rotated = np.rot90(data, 2)
@@ -31,9 +31,7 @@ def make_plot():
     fig, current_ax = plt.subplots()
     current_ax.imshow(subtract)
 
-    toggle_selector.RS = RectangleSelector(current_ax, line_select_callback, drawtype='box', useblit=True,
-                                           button=[1, 3], minspanx=5, minspany=5, spancoords='pixels', interactive=True)
-
+    toggle_selector.RS = RectangleSelector(current_ax, line_select_callback, drawtype='box', useblit=True, button=[1, 3], minspanx=5, minspany=5, interactive=True, spancoords='pixels')
     plt.connect('key_press_event', toggle_selector)
     draw()
 
