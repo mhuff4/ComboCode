@@ -27,7 +27,7 @@ from configparser import SafeConfigParser
 import numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt
-from PyQt4 import QtGui
+from PyQt5 import QtGui
 
 
 try:
