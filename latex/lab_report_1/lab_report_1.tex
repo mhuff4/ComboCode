@@ -26,6 +26,7 @@
 \usepackage{graphicx} % Required for the inclusion of images
 \usepackage{natbib} % Required to change bibliography style to APA
 \usepackage{amsmath} % Required for some math elements 
+\usepackage{enumitem}
 
 \setlength\parindent{0pt} % Removes all indentation from paragraphs
 
@@ -81,12 +82,12 @@ To get to know the diffractometer and X'Pert Data Collector
 
 \section{Results and Conclusions}
 
-Increasing the width of the slits generally increases the intensity because more photons can get through. If you decrease the size of the anti-scatter slit you reduce the background signal so the peaks get smoother but also less intense. The accepted wavelengths for K$\alpha_1$ and K$\alpha_2$ are .1540562 and .1544398 nm, respectively. 
+Scan 4 is the best to use for {422} planes in Silicon; it uses a time per step of .5 seconds over a 1 degree range and .02 degrees step size. The large and small peaks of $CuK_\alpha1$ and $CuK_\alpha2$ do appear to be very close to a 2:1 ratio in intensity. 
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[width=0.65\textwidth]{lindamaggietutorial1} % Include the image lindamaggietutorial1.pdf
-\caption{Si sample with Cu target: K$\alpha_1$ and K$\alpha_2$ peaks }
+\includegraphics[width=0.65\textwidth]{combinedgraph} % Include the image combinedgraph.pdf
+\caption{{422} plane in Si sample with Cu target: K$\alpha_1$ and K$\alpha_2$ peaks, variable step size, scan time, time per step}
 \end{center}
 \end{figure}
 
@@ -95,7 +96,7 @@ Increasing the width of the slits generally increases the intensity because more
 %----------------------------------------------------------------------------------------
 
 \section{Discussion}
-$CuK_\alpha1$ is about twice the intensity of $CuK_\alpha2$ (see Cullity, pg 9). The transition that leads to the $CuK_\alpha1$ peak is from an electron dropping two orbitals, while the transition that causes $CuK_\alpha2$ only drops one orbital levels. This means that the energy is greater for $CuK_\alpha1$, and therefore the wavelength is smaller, and it has higher intensity. 
+$CuK_\alpha1$ is about twice the intensity of $CuK_\alpha2$ (see Cullity, pg 9). The transition that leads to the $CuK_\alpha1$ peak is from an electron dropping two orbitals, while the transition that causes $CuK_\alpha2$ only drops one orbital levels. This means that the energy is greater for $CuK_\alpha1$, and therefore the wavelength is smaller, and it has higher intensity. Different scales such as square root or log scales are good for differentiating peaks in some cases or seeing peaks which are much larger or smaller than one another on the same graph. In our case, linear is fine because the intensity of peaks is not too different. 
 
 
 
@@ -103,21 +104,21 @@ $CuK_\alpha1$ is about twice the intensity of $CuK_\alpha2$ (see Cullity, pg 9).
 %	SECTION 6
 %----------------------------------------------------------------------------------------
 
-\section{Answers to Definitions}
+\section{Answers to Multiple Choice Questions}
+\begin{enumerate}[label=(\roman*)]
+\begin{item}
+d
+\end{item}
+\begin{item}
+c
+\end{item}
+\begin{item}
+c
+\end{item}
+\begin{item}
+b
+\end{item}
 
-\begin{enumerate}
-\begin{item}
-The \emph{atomic weight of an element} is the relative weight of one of its atoms compared to C-12 with a weight of 12.0000000$\ldots$, hydrogen with a weight of 1.008, to oxygen with a weight of 16.00. Atomic weight is also the average weight of all the atoms of that element as they occur in nature.
-\end{item}
-\begin{item}
-The \emph{units of atomic weight} are two-fold, with an identical numerical value. They are g/mole of atoms (or just g/mol) or amu/atom.
-\end{item}
-\begin{item}
-\emph{Percentage discrepancy} between an accepted (literature) value and an experimental value is
-\begin{equation*}
-\frac{\mathrm{experimental\;result} - \mathrm{accepted\;result}}{\mathrm{accepted\;result}}
-\end{equation*}
-\end{item}
 \end{enumerate}
 
 %----------------------------------------------------------------------------------------
